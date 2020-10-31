@@ -5,10 +5,25 @@
 <body>
     
     <div class="site">
-        sdf
+        <div class="top-line">
+            <div class="container">
+                <div class="top-line__content">
+                    <!-- ADD Menu -->
+                        {% include "include/menu.html" %}
+                    <!-- END Menu -->
+                    <!-- ADD Summary -->
+                        {% include "include/summary.html" %}
+                    <!-- end Summary -->
+                    <!-- ADD Cabinet -->
+                        {% include "include/cabinet.html" %}
+                    <!-- END Cabinet -->
+                </div>
+            </div>
+        </div>
     </div>
 
 {% include "common/footer.html" %} 
+{% include "include/sprite.html" %} 
 {% include "include/scripts.html" %}     
 </body>
 </html>

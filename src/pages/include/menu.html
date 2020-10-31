@@ -1,0 +1,17 @@
+{% set lists = [ 
+    { "name": "Новая заявка", "class": "active" }, 
+    { "name": "Поиск заявок", "class": "empty" }, 
+    { "name": "Отчеты", "class": "empty" }, 
+    { "name":"Обучение", "class": "empty" }, 
+    { "name": "Обратная связь", "class": "empty" }
+    ] 
+%}
+<nav class="nav-top">
+  <ul>
+    {% for list in lists %}
+        <li>
+            <a {% if list.class == "active" %} class="{{list.class}}" {% endif %} href="#">{{list.name}}</a>
+        </li>
+    {% endfor %}
+  </ul>
+</nav>
