@@ -1,0 +1,32 @@
+@import "libs";
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: $font-size;
+  line-height: 1.4;
+  color: $text;
+  font-family: $font-family;
+  overflow-x: hidden;
+  min-width: 320px;
+  input,
+  textarea,
+  button {
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
